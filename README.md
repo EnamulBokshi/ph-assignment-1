@@ -62,9 +62,9 @@ function processPayment(payment: PaymentMethod) {
 ইউনিয়ন টাইপ আমাদের বেশ কিছু সুবিদা দিয়ে থাকে । আর  আমরা এটা হরহামেশাই ব্যাবহার করে থাকি। নিছে কিছু সুবিধা তুলে ধরা হল। 
 
 **Union Types-এর সুবিধা:**
-    • Flexible type definition
-    • Type narrowing সহজভাবে করা যায়
-    • একাধিক valid type accept করা যায়
+    -• Flexible type definition
+    -• Type narrowing সহজভাবে করা যায়
+    -• একাধিক valid type accept করা যায়
 
 ### Intersection Types
 
@@ -134,9 +134,9 @@ const userProfile: FullProfile = {
  চলো এবার দেখে নেওয়া যাক Intersection Types-এর কিছ সুবিধা 
 
 **Intersection Types-এর সুবিধা:**
-    • একাধিক interface বা type থেকে properties combine করা যায়
-    • Composition pattern implement করা সহজ
-    • Code reusability বৃদ্ধি পায়
+    - একাধিক interface বা type থেকে properties combine করা যায়
+    - Composition pattern implement করা সহজ
+    - Code reusability বৃদ্ধি পায়
 
 ## ২. keyof Keyword এর ব্যবহার
 
