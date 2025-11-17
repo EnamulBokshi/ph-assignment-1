@@ -134,9 +134,9 @@ const userProfile: FullProfile = {
  চলো এবার দেখে নেওয়া যাক Intersection Types-এর কিছ সুবিধা 
 
 **Intersection Types-এর সুবিধা:**
-    - একাধিক interface বা type থেকে properties combine করা যায়
-    - Composition pattern implement করা সহজ
-    - Code reusability বৃদ্ধি পায়
+    -একাধিক interface বা type থেকে properties combine করা যায়
+    -Composition pattern implement করা সহজ
+    -Code reusability বৃদ্ধি পায়
 
 ## ২. keyof Keyword এর ব্যবহার
 
