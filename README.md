@@ -146,10 +146,7 @@ const userProfile: FullProfile = {
 
 ## ২. keyof Keyword এর ব্যবহার
 
-`keyof` হলো একটি TypeScript operator যা একটি object type-এর সকল keys-কে string বা numeric literal union type হিসেবে extract করে। এটি type-safe property access নিশ্চিত করতে অত্যন্ত কার্যকর।
-
-### keyof Keyword 
-keyof type script এর   অত্যান্তো দারূণ একটি ফিচার। এটি দিয়ে আমারা অন্য কোন interface এর key গুলো নিয়ে নিতে পারি বা কাজ করতে পারি 
+`keyof` হলো একটি TypeScript operator যা একটি object type-এর সকল keys-কে string বা numeric literal union type হিসেবে extract করে। `keyof` type script এর অত্যন্ত দারূণ একটি ফিচার। এটি দিয়ে আমারা অন্য কোন interface এর key গুলো নিয়ে নিতে পারি বা কাজ করতে পারি 
 
 চট করে নিছের উদাহরণ টি দেখে ফেলি।
 
