@@ -11,10 +11,7 @@ const formatValue =(input:string | number | boolean) : string | number | boolean
     throw new Error('Invalid input type provided!')
 }
 
-
-
 type GetLength = (input: string | number[]) => number ;
-
 const getLength : GetLength= (input) => {
     if(typeof input === 'string'){
         return input.length;
@@ -25,7 +22,6 @@ const getLength : GetLength= (input) => {
     
     return 0;
 }
-
 
 
 class Person{
@@ -42,13 +38,12 @@ class Person{
 }
 
 
-
 type FilterByRating = (books: {title: string; rating: number}[]) => {title: string; rating: number}[]
 const filterByRating : FilterByRating =(books) =>{
+    // if(books.length === 0) throw new Error('No books inserted');
     const filteredBooks = books.filter(book => {
         if(book.rating < 0 || book.rating > 5) {
-            throw new Error('Rating must be between 0-5');
-            
+            throw new Error('Rating must be between 0-5');            
         }
         if(book.rating >=4 ) {
             return {
@@ -69,11 +64,9 @@ type User = {
 }
 type FilterActiveUsers = (users: User[]) => User[];
 const filterActiveUsers:FilterActiveUsers =(users)=>{
+    if(!users) throw new Error('No users provided!');
     return users.filter(user => user.isActive)
 }
-
-
-
 
 interface Book{
     title: string;
@@ -82,14 +75,11 @@ interface Book{
     isAvailable:boolean;
 }
 
-const printBookDetails = (book:Book):string => {
+const printBookDetails = (book:Book) => {
+    if(!book || Object.keys(book).length === 0) throw new Error('No book provided');
+
     console.log(`Title: ${book.title}: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? 'Yes':'No'}`)
-    return `Title: ${book.title}: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? 'Yes':'No'}`
 } 
-
-
-
-
 
 
 type GetUniqueValues = (array1: number[] | string [], array2: number[] | string[]) => number[] | string[];
@@ -107,11 +97,8 @@ const getUniqueValues : GetUniqueValues = (array1, array2) => {
         }
         if(!find) array1[array1.length] = array2[i];
     }
-
     return array1;
 }
-
-
 
 
 type Product ={
