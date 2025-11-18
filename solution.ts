@@ -38,6 +38,11 @@ class Person{
 }
 
 
+const person1 = new Person('John Doe', 30);
+
+const person2 = new Person('Alice', 25);
+
+
 type FilterByRating = (books: {title: string; rating: number}[]) => {title: string; rating: number}[]
 const filterByRating : FilterByRating =(books) =>{
     // if(books.length === 0) throw new Error('No books inserted');
@@ -80,6 +85,9 @@ const printBookDetails = (book:Book) => {
 
     console.log(`Title: ${book.title}: ${book.author}, Published: ${book.publishedYear}, Available: ${book.isAvailable ? 'Yes':'No'}`)
 } 
+
+
+
 
 
 type GetUniqueValues = (array1: number[] | string [], array2: number[] | string[]) => number[] | string[];
